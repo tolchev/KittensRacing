@@ -6,7 +6,7 @@ namespace Assets.Scripts.GameStates
     {
         public override void Handle(GameContext context)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
             {
                 Messenger.Broadcast(GameEvents.PrepareStarting);
                 context.State = new GameWaitGoToStart();
