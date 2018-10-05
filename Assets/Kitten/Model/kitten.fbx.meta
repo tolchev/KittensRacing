@@ -1,171 +1,312 @@
 fileFormatVersion: 2
-guid: 4c6c159b109eea140901b40f6a2c1103
-timeCreated: 1520782619
-licenseType: Free
+guid: f39b1400e9461b94aa1ef06930d090b5
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: BellyVolume
     100002: ChestVolume
     100004: Head
     100006: Hips
-    100008: Jaw
+    100008: Jaw1
     100010: kitt_Body1
     100012: kitt_Cornea1
-    100014: kitt_Hair1
-    100016: kitt_LeftEyeBall
-    100018: kitt_RightEyeBall
-    100020: kitt_Tongue
-    100022: //RootNode
-    100024: kittenGeo1
-    100026: kittenRoot
-    100028: LeftArm
-    100030: LeftCheek
-    100032: LeftEar1
-    100034: LeftEar2
-    100036: LeftEye
-    100038: LeftEyeBottomLid
-    100040: LeftEyeUpperLid
-    100042: LeftFingerBase
-    100044: LeftFoot
-    100046: LeftFootIndex1
-    100048: LeftForeArm
-    100050: LeftHand
-    100052: LeftHeadVolume
-    100054: LeftLeg
-    100056: LeftShoulder
-    100058: LeftToeBase
-    100060: LeftUpLeg
-    100062: Neck
-    100064: RightArm
-    100066: RightCheek
-    100068: RightEar1
-    100070: RightEar2
-    100072: RightEye
-    100074: RightEyeBottomLid
-    100076: RightEyeUpperLid
-    100078: RightFingerBase
-    100080: RightFoot
-    100082: RightFootIndex1
-    100084: RightForeArm
-    100086: RightHand
-    100088: RightHeadVolume
-    100090: RightLeg
-    100092: RightShoulder
-    100094: RightToeBase
-    100096: RightUpLeg
-    100098: Spine
-    100100: Spine1
-    100102: Spine2
-    100104: Spine3
-    100106: Tail1
-    100108: Tail2
-    100110: Tail3
-    100112: Tail4
-    100114: Tail5
-    100116: Tail6
-    100118: Tontue
-    100120: Tontue1
-    100122: Tontue2
-    100124: TopHeadVolume
+    100014: kitt_EyeBall1
+    100016: kitt_Hair1
+    100018: kitt_Tongue
+    100020: //RootNode
+    100022: kittenGeo
+    100024: kittenRoot
+    100026: LeftArm
+    100028: LeftCheek
+    100030: LeftEar1
+    100032: LeftEar2
+    100034: LeftEye
+    100036: LeftEyeBottomLid
+    100038: LeftEyeUpperLid
+    100040: LeftFingerBase
+    100042: LeftFoot
+    100044: LeftFootIndex1
+    100046: LeftForeArm
+    100048: LeftHand
+    100050: LeftHeadVolume
+    100052: LeftLeg
+    100054: LeftShoulder
+    100056: LeftToeBase
+    100058: LeftUpLeg
+    100060: Neck
+    100062: RightArm
+    100064: RightCheek
+    100066: RightEar1
+    100068: RightEar2
+    100070: RightEye
+    100072: RightEyeBottomLid
+    100074: RightEyeUpperLid
+    100076: RightFingerBase
+    100078: RightFoot
+    100080: RightFootIndex1
+    100082: RightForeArm
+    100084: RightHand
+    100086: RightHeadVolume
+    100088: RightLeg
+    100090: RightShoulder
+    100092: RightToeBase
+    100094: RightUpLeg
+    100096: Spine
+    100098: Spine1
+    100100: Spine2
+    100102: Spine3
+    100104: Tail1
+    100106: Tail2
+    100108: Tail3
+    100110: Tail4
+    100112: Tail5
+    100114: Tail6
+    100116: Tontue
+    100118: Tontue1
+    100120: Tontue2
+    100122: TopHeadVolume
+    100124: Jaw
+    100126: kitten_Ctrl:ChestEndEffector
+    100128: kitten_Ctrl:ChestOriginEffector
+    100130: kitten_Ctrl:Head
+    100132: kitten_Ctrl:HeadEffector
+    100134: kitten_Ctrl:Hips
+    100136: kitten_Ctrl:HipsEffector
+    100138: kitten_Ctrl:LeftAnkleEffector
+    100140: kitten_Ctrl:LeftArm
+    100142: kitten_Ctrl:LeftElbowEffector
+    100144: kitten_Ctrl:LeftFingerBase
+    100146: kitten_Ctrl:LeftFoot
+    100148: kitten_Ctrl:LeftFootEffector
+    100150: kitten_Ctrl:LeftFootIndex1
+    100152: kitten_Ctrl:LeftFootIndexEffector
+    100154: kitten_Ctrl:LeftForeArm
+    100156: kitten_Ctrl:LeftHand
+    100158: kitten_Ctrl:LeftHandEffector
+    100160: kitten_Ctrl:LeftHipEffector
+    100162: kitten_Ctrl:LeftKneeEffector
+    100164: kitten_Ctrl:LeftLeg
+    100166: kitten_Ctrl:LeftShoulder
+    100168: kitten_Ctrl:LeftShoulderEffector
+    100170: kitten_Ctrl:LeftToeBase
+    100172: kitten_Ctrl:LeftUpLeg
+    100174: kitten_Ctrl:LeftWristEffector
+    100176: kitten_Ctrl:Neck
+    100178: kitten_Ctrl:Reference
+    100180: kitten_Ctrl:RightAnkleEffector
+    100182: kitten_Ctrl:RightArm
+    100184: kitten_Ctrl:RightElbowEffector
+    100186: kitten_Ctrl:RightFingerBase
+    100188: kitten_Ctrl:RightFoot
+    100190: kitten_Ctrl:RightFootEffector
+    100192: kitten_Ctrl:RightFootIndex1
+    100194: kitten_Ctrl:RightFootIndexEffector
+    100196: kitten_Ctrl:RightForeArm
+    100198: kitten_Ctrl:RightHand
+    100200: kitten_Ctrl:RightHandEffector
+    100202: kitten_Ctrl:RightHipEffector
+    100204: kitten_Ctrl:RightKneeEffector
+    100206: kitten_Ctrl:RightLeg
+    100208: kitten_Ctrl:RightShoulder
+    100210: kitten_Ctrl:RightShoulderEffector
+    100212: kitten_Ctrl:RightToeBase
+    100214: kitten_Ctrl:RightUpLeg
+    100216: kitten_Ctrl:RightWristEffector
+    100218: kitten_Ctrl:Spine
+    100220: kitten_Ctrl:Spine1
+    100222: kitten_Ctrl:Spine2
+    100224: kitten_Ctrl:Spine3
+    100226: kitt_LeftEyeBall
+    100228: kitt_RightEyeBall
+    100230: kittenGeo1
     400000: BellyVolume
     400002: ChestVolume
     400004: Head
     400006: Hips
-    400008: Jaw
+    400008: Jaw1
     400010: kitt_Body1
     400012: kitt_Cornea1
-    400014: kitt_Hair1
-    400016: kitt_LeftEyeBall
-    400018: kitt_RightEyeBall
-    400020: kitt_Tongue
-    400022: //RootNode
-    400024: kittenGeo1
-    400026: kittenRoot
-    400028: LeftArm
-    400030: LeftCheek
-    400032: LeftEar1
-    400034: LeftEar2
-    400036: LeftEye
-    400038: LeftEyeBottomLid
-    400040: LeftEyeUpperLid
-    400042: LeftFingerBase
-    400044: LeftFoot
-    400046: LeftFootIndex1
-    400048: LeftForeArm
-    400050: LeftHand
-    400052: LeftHeadVolume
-    400054: LeftLeg
-    400056: LeftShoulder
-    400058: LeftToeBase
-    400060: LeftUpLeg
-    400062: Neck
-    400064: RightArm
-    400066: RightCheek
-    400068: RightEar1
-    400070: RightEar2
-    400072: RightEye
-    400074: RightEyeBottomLid
-    400076: RightEyeUpperLid
-    400078: RightFingerBase
-    400080: RightFoot
-    400082: RightFootIndex1
-    400084: RightForeArm
-    400086: RightHand
-    400088: RightHeadVolume
-    400090: RightLeg
-    400092: RightShoulder
-    400094: RightToeBase
-    400096: RightUpLeg
-    400098: Spine
-    400100: Spine1
-    400102: Spine2
-    400104: Spine3
-    400106: Tail1
-    400108: Tail2
-    400110: Tail3
-    400112: Tail4
-    400114: Tail5
-    400116: Tail6
-    400118: Tontue
-    400120: Tontue1
-    400122: Tontue2
-    400124: TopHeadVolume
-    2100000: kitten_Body
-    2100002: kitten_Hair
-    2100004: kitten_Cornea
-    2100006: kitten_EyeballB
-    2100008: kitten_EyeballA
+    400014: kitt_EyeBall1
+    400016: kitt_Hair1
+    400018: kitt_Tongue
+    400020: //RootNode
+    400022: kittenGeo
+    400024: kittenRoot
+    400026: LeftArm
+    400028: LeftCheek
+    400030: LeftEar1
+    400032: LeftEar2
+    400034: LeftEye
+    400036: LeftEyeBottomLid
+    400038: LeftEyeUpperLid
+    400040: LeftFingerBase
+    400042: LeftFoot
+    400044: LeftFootIndex1
+    400046: LeftForeArm
+    400048: LeftHand
+    400050: LeftHeadVolume
+    400052: LeftLeg
+    400054: LeftShoulder
+    400056: LeftToeBase
+    400058: LeftUpLeg
+    400060: Neck
+    400062: RightArm
+    400064: RightCheek
+    400066: RightEar1
+    400068: RightEar2
+    400070: RightEye
+    400072: RightEyeBottomLid
+    400074: RightEyeUpperLid
+    400076: RightFingerBase
+    400078: RightFoot
+    400080: RightFootIndex1
+    400082: RightForeArm
+    400084: RightHand
+    400086: RightHeadVolume
+    400088: RightLeg
+    400090: RightShoulder
+    400092: RightToeBase
+    400094: RightUpLeg
+    400096: Spine
+    400098: Spine1
+    400100: Spine2
+    400102: Spine3
+    400104: Tail1
+    400106: Tail2
+    400108: Tail3
+    400110: Tail4
+    400112: Tail5
+    400114: Tail6
+    400116: Tontue
+    400118: Tontue1
+    400120: Tontue2
+    400122: TopHeadVolume
+    400124: Jaw
+    400126: kitten_Ctrl:ChestEndEffector
+    400128: kitten_Ctrl:ChestOriginEffector
+    400130: kitten_Ctrl:Head
+    400132: kitten_Ctrl:HeadEffector
+    400134: kitten_Ctrl:Hips
+    400136: kitten_Ctrl:HipsEffector
+    400138: kitten_Ctrl:LeftAnkleEffector
+    400140: kitten_Ctrl:LeftArm
+    400142: kitten_Ctrl:LeftElbowEffector
+    400144: kitten_Ctrl:LeftFingerBase
+    400146: kitten_Ctrl:LeftFoot
+    400148: kitten_Ctrl:LeftFootEffector
+    400150: kitten_Ctrl:LeftFootIndex1
+    400152: kitten_Ctrl:LeftFootIndexEffector
+    400154: kitten_Ctrl:LeftForeArm
+    400156: kitten_Ctrl:LeftHand
+    400158: kitten_Ctrl:LeftHandEffector
+    400160: kitten_Ctrl:LeftHipEffector
+    400162: kitten_Ctrl:LeftKneeEffector
+    400164: kitten_Ctrl:LeftLeg
+    400166: kitten_Ctrl:LeftShoulder
+    400168: kitten_Ctrl:LeftShoulderEffector
+    400170: kitten_Ctrl:LeftToeBase
+    400172: kitten_Ctrl:LeftUpLeg
+    400174: kitten_Ctrl:LeftWristEffector
+    400176: kitten_Ctrl:Neck
+    400178: kitten_Ctrl:Reference
+    400180: kitten_Ctrl:RightAnkleEffector
+    400182: kitten_Ctrl:RightArm
+    400184: kitten_Ctrl:RightElbowEffector
+    400186: kitten_Ctrl:RightFingerBase
+    400188: kitten_Ctrl:RightFoot
+    400190: kitten_Ctrl:RightFootEffector
+    400192: kitten_Ctrl:RightFootIndex1
+    400194: kitten_Ctrl:RightFootIndexEffector
+    400196: kitten_Ctrl:RightForeArm
+    400198: kitten_Ctrl:RightHand
+    400200: kitten_Ctrl:RightHandEffector
+    400202: kitten_Ctrl:RightHipEffector
+    400204: kitten_Ctrl:RightKneeEffector
+    400206: kitten_Ctrl:RightLeg
+    400208: kitten_Ctrl:RightShoulder
+    400210: kitten_Ctrl:RightShoulderEffector
+    400212: kitten_Ctrl:RightToeBase
+    400214: kitten_Ctrl:RightUpLeg
+    400216: kitten_Ctrl:RightWristEffector
+    400218: kitten_Ctrl:Spine
+    400220: kitten_Ctrl:Spine1
+    400222: kitten_Ctrl:Spine2
+    400224: kitten_Ctrl:Spine3
+    400226: kitt_LeftEyeBall
+    400228: kitt_RightEyeBall
+    400230: kittenGeo1
+    2300000: kitt_Body1
+    2300002: kitt_Cornea1
+    2300004: kitt_Hair1
+    2300006: kitt_LeftEyeBall
+    2300008: kitt_RightEyeBall
+    2300010: kitt_Tongue
+    3300000: kitt_Body1
+    3300002: kitt_Cornea1
+    3300004: kitt_Hair1
+    3300006: kitt_LeftEyeBall
+    3300008: kitt_RightEyeBall
+    3300010: kitt_Tongue
     4300000: kitt_Body1
     4300002: kitt_Tongue
     4300004: kitt_Hair1
     4300006: kitt_Cornea1
-    4300008: kitt_LeftEyeBall
-    4300010: kitt_RightEyeBall
+    4300008: kitt_EyeBall1
+    4300010: kitt_LeftEyeBall
+    4300012: kitt_RightEyeBall
     7400000: Idle
     7400002: Walk
-    7400004: Run
-    7400006: Jump
-    7400008: Ithcing
-    7400010: Meow
-    7400012: IdleSitOnly
-    7400014: IdleSitOriginal
-    7400016: IdlePrepareSit
-    7400018: IdleStand
-    7400020: IdleBrief
+    7400004: kittAll_Walk
+    7400006: Run
+    7400008: Jump
+    7400010: kittAll_Jump_Short
+    7400012: Ithcing
+    7400014: Meow
+    7400016: IdleSitOriginal
+    7400018: IdleSitOnly
+    7400020: IdlePrepareSit
+    7400022: IdleStand
+    7400024: IdleBrief
     9500000: //RootNode
+    11100000: //RootNode
     13700000: kitt_Body1
     13700002: kitt_Cornea1
-    13700004: kitt_Hair1
-    13700006: kitt_LeftEyeBall
-    13700008: kitt_RightEyeBall
-    13700010: kitt_Tongue
-  externalObjects: {}
+    13700004: kitt_EyeBall1
+    13700006: kitt_Hair1
+    13700008: kitt_Tongue
+    13700010: kitt_LeftEyeBall
+    13700012: kitt_RightEyeBall
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitten_Body
+    second: {fileID: 2100000, guid: f4a14f1e3062bda4c91ae349570e6844, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitten_Cornea
+    second: {fileID: 2100000, guid: d53df8c8f2b175a4f95599fcede19d2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitten_EyeballA
+    second: {fileID: 2100000, guid: fabf263ad3713ce47b7c2ce60a171ca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitten_EyeballB
+    second: {fileID: 2100000, guid: 31808dc7b23fd4f408f5f8b8a43e66fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitten_Hair
+    second: {fileID: 2100000, guid: b70108943aa015549938f65a10b50a73, type: 2}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -179,6 +320,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -192,7 +334,7 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 0
       lastFrame: 298
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -200,7 +342,7 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
@@ -211,8 +353,132 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo
+        weight: 1
+      - path: kittenGeo/kitt_Body1
+        weight: 1
+      - path: kittenGeo/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo/kitt_EyeBall1
+        weight: 1
+      - path: kittenGeo/kitt_Hair1
+        weight: 1
+      - path: kittenGeo/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -220,7 +486,7 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 300
       lastFrame: 317
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -239,8 +505,132 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo
+        weight: 1
+      - path: kittenGeo/kitt_Body1
+        weight: 1
+      - path: kittenGeo/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo/kitt_EyeBall1
+        weight: 1
+      - path: kittenGeo/kitt_Hair1
+        weight: 1
+      - path: kittenGeo/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -248,7 +638,7 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 318
       lastFrame: 326
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -267,8 +657,132 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo
+        weight: 1
+      - path: kittenGeo/kitt_Body1
+        weight: 1
+      - path: kittenGeo/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo/kitt_EyeBall1
+        weight: 1
+      - path: kittenGeo/kitt_Hair1
+        weight: 1
+      - path: kittenGeo/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -295,8 +809,132 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo
+        weight: 1
+      - path: kittenGeo/kitt_Body1
+        weight: 1
+      - path: kittenGeo/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo/kitt_EyeBall1
+        weight: 1
+      - path: kittenGeo/kitt_Hair1
+        weight: 1
+      - path: kittenGeo/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -323,8 +961,134 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -351,8 +1115,134 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -379,8 +1269,134 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -407,7 +1423,133 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -435,7 +1577,133 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -463,7 +1731,133 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -491,7 +1885,133 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kittenGeo1
+        weight: 1
+      - path: kittenGeo1/kitt_Body1
+        weight: 1
+      - path: kittenGeo1/kitt_Cornea1
+        weight: 1
+      - path: kittenGeo1/kitt_Hair1
+        weight: 1
+      - path: kittenGeo1/kitt_LeftEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_RightEyeBall
+        weight: 1
+      - path: kittenGeo1/kitt_Tongue
+        weight: 1
+      - path: kittenRoot
+        weight: 1
+      - path: kittenRoot/Hips
+        weight: 1
+      - path: kittenRoot/Hips/BellyVolume
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: kittenRoot/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: kittenRoot/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightFootIndex1
+        weight: 1
+      - path: kittenRoot/Hips/Spine
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/ChestVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Jaw
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEar1/LeftEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/LeftHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightCheek
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEar1/RightEar2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEye
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeBottomLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightEyeUpperLid
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/RightHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/Tontue/Tontue1/Tontue2
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/Neck/Head/TopHeadVolume
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: kittenRoot/Hips/Spine/Spine1/Spine2/Spine3/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
+        weight: 1
+      - path: kittenRoot/Hips/Tail1
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: kittenRoot/Hips/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -518,11 +2038,13 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -536,11 +2058,11 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: kittenRoot
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
-    skeletonHasParents: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
