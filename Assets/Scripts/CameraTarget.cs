@@ -8,16 +8,16 @@ public class CameraTarget : MonoBehaviour
         Messenger<Transform>.AddListener(GameEvents.KittenPosition, OnEvent);
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnEvent(Transform obj)
     {
         if (transform.position.z < obj.transform.position.z)
         {
             transform.position = Vector3.forward * obj.transform.position.z;
         }
+    }
+
+    void OnDestroy()
+    {
+        Messenger<Transform>.RemoveListener(GameEvents.KittenPosition, OnEvent);
     }
 }

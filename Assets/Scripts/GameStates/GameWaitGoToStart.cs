@@ -9,7 +9,6 @@
             Messenger.AddListener(GameEvents.KittenOnStart, KittenOnStart);
         }
 
-
         public override void Handle(GameContext context)
         {
             if (count == 3)

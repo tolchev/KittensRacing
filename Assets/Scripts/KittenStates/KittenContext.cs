@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Assets.Scripts.KittenStates
 {
-    class KittenContext
+    class KittenContext : IDisposable
     {
         public const string OnStart = "OnStart";
 
@@ -30,6 +31,11 @@ namespace Assets.Scripts.KittenStates
         private void PrepareStarting()
         {
             State.OnEvent(OnStart);
+        }
+
+        public void Dispose()
+        {
+            Messenger.RemoveListener(GameEvents.PrepareStarting, PrepareStarting);
         }
     }
 }

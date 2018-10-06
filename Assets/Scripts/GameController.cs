@@ -48,4 +48,10 @@ public class GameController : MonoBehaviour
             }            
         }
     }
+
+    void OnDestroy()
+    {
+        Messenger<Transform>.RemoveListener(GameEvents.KittenFinished, OnKittenFinishedEvent);
+        Messenger.RemoveListener(GameEvents.KittenStoped, OnKittenStopedEvent);
+    }
 }

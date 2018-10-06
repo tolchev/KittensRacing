@@ -19,11 +19,6 @@ public class OrbitCamera : MonoBehaviour
         offset = targert.position - transform.position;
     }
 
-    void Update()
-    {
-
-    }
-
     void LateUpdate()
     {
         float horInput = Input.GetAxis("Horizontal");

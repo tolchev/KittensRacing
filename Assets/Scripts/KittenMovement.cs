@@ -41,4 +41,12 @@ public class KittenMovement : MonoBehaviour
     {
         context.Request();
     }
+
+    void OnDestroy()
+    {
+        if (context != null)
+        {
+            context.Dispose();
+        }
+    }
 }
