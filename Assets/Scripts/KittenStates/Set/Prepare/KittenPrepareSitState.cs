@@ -15,7 +15,7 @@ namespace Assets.Scripts.KittenStates
             context.animator.SetBool("Sitting", true);
         }
 
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (!isInit)
             {
@@ -30,7 +30,7 @@ namespace Assets.Scripts.KittenStates
 
             if (context.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
             {
-                context.State = new KittenGoToStartState();
+                context.TransitionTo(new KittenGoToStartState());
             }
         }
     }

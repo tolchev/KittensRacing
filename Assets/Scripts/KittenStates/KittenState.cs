@@ -2,7 +2,15 @@
 {
     abstract class KittenState
     {
-        public abstract void Handle(KittenContext context);
+        protected KittenContext context;
+
+        public void SetContext(KittenContext context)
+        {
+            this.context = context;
+        }
+
+        public abstract void Handle();
+
         public virtual void OnEvent(string evnt) { }
     }
 }

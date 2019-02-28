@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        context = new GameContext { State = new GamePrepareState() };
+        context = new GameContext(new GamePrepareState());
 
         Messenger<Transform>.AddListener(GameEvents.KittenFinished, OnKittenFinishedEvent);
         Messenger.AddListener(GameEvents.KittenStoped, OnKittenStopedEvent);

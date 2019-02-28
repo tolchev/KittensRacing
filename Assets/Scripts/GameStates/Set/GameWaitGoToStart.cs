@@ -9,11 +9,11 @@
             Messenger.AddListener(GameEvents.KittenOnStart, KittenOnStart);
         }
 
-        public override void Handle(GameContext context)
+        public override void Handle()
         {
             if (count == 3)
             {
-                context.State = new GameTimerState();
+                context.TransitionTo(new GameTimerState());
                 Messenger.RemoveListener(GameEvents.KittenOnStart, KittenOnStart);
             }
         }

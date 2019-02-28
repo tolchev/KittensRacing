@@ -2,11 +2,22 @@
 {
     class GameContext
     {
-        public GameState State { get; set; }
+        public GameContext(GameState state)
+        {
+            TransitionTo(state);
+        }
+
+        public GameState State { get; private set; }
 
         public void Request()
         {
-            State.Handle(this);
+            State.Handle();
+        }
+
+        public void TransitionTo(GameState state)
+        {
+            State = state;
+            state.SetContext(this);
         }
     }
 }

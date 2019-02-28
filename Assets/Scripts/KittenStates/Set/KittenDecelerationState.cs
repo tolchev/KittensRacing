@@ -11,7 +11,7 @@ namespace Assets.Scripts.KittenStates
             speed = startSpeed;
         }
 
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (speed > 10)
             {
@@ -24,7 +24,7 @@ namespace Assets.Scripts.KittenStates
             {
                 context.animator.SetBool("Running", false);
                 context.animator.SetBool("Walking", true);
-                context.State = new KittenFinishedState();
+                context.TransitionTo(new KittenFinishedState());
             }
         }
     }

@@ -11,7 +11,7 @@
             context.animator.SetBool("Ithcing", true);
         }
 
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (!isInit)
             {
@@ -31,7 +31,7 @@
 
             if (context.animator.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
             {
-                context.State = new KittenGoToStartState();
+                context.TransitionTo(new KittenGoToStartState());
             }
         }
     }

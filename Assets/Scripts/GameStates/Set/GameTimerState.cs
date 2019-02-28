@@ -6,12 +6,12 @@ namespace Assets.Scripts.GameStates
     {
         readonly DateTime start = DateTime.Now;
 
-        public override void Handle(GameContext context)
+        public override void Handle()
         {
             if (DateTime.Now - start >= new TimeSpan(0, 0, 3))
             {
                 Messenger.Broadcast(GameEvents.Start);
-                context.State = new GameNullState();
+                context.TransitionTo(new GameNullState());
             }
         }
     }

@@ -13,7 +13,7 @@ namespace Assets.Scripts.KittenStates
 
         public KittenContext(KittenState state, CharacterController charController, Animator animator, IMovementModel movementModel, string name)
         {
-            State = state;
+            TransitionTo(state);
             this.charController = charController;
             this.animator = animator;
             this.movementModel = movementModel;
@@ -21,11 +21,17 @@ namespace Assets.Scripts.KittenStates
             Messenger.AddListener(GameEvents.PrepareStarting, PrepareStarting);
         }
 
-        public KittenState State { get; set; }
+        public KittenState State { get; private set; }
 
         public void Request()
         {
-            State.Handle(this);
+            State.Handle();
+        }
+
+        public void TransitionTo(KittenState state)
+        {
+            State = state;
+            state.SetContext(this);
         }
 
         private void PrepareStarting()

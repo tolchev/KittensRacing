@@ -5,7 +5,7 @@ namespace Assets.Scripts.KittenStates
 {
     class KittenNullState : KittenState
     {
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
             {

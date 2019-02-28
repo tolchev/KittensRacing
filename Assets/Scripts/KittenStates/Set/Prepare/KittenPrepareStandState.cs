@@ -2,12 +2,12 @@
 {
     class KittenPrepareStandState : KittenPrepareState
     {
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (isStart)
             {
                 context.animator.SetBool("Walking", true);
-                context.State = new KittenGoToStartState();
+                context.TransitionTo(new KittenGoToStartState());
             }
         }
     }

@@ -9,12 +9,12 @@
             Messenger.AddListener(GameEvents.Start, OnStart);
         }
 
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             if (isStart)
             {
                 context.animator.SetBool("Running", true);
-                context.State = new KittenRunState();
+                context.TransitionTo(new KittenRunState());
                 Messenger.RemoveListener(GameEvents.Start, OnStart);
             }
         }

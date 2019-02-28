@@ -2,9 +2,6 @@
 {
     class GameNullState : GameState
     {
-        public override void Handle(GameContext context)
-        {
-
-        }
+        public override void Handle() { }
     }
 }

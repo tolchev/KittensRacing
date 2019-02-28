@@ -12,7 +12,7 @@ namespace Assets.Scripts.KittenStates
             startDateTime = DateTime.Now;
         }
 
-        public override void Handle(KittenContext context)
+        public override void Handle()
         {
             TimeSpan moveTime = DateTime.Now - startDateTime;
             float moveSpeed = context.movementModel.GetSpeed(moveTime);
@@ -21,7 +21,7 @@ namespace Assets.Scripts.KittenStates
             if (context.charController.transform.position.z + movement.z > 135)
             {
                 Messenger<Transform>.Broadcast(GameEvents.KittenFinished, context.charController.transform);
-                context.State = new KittenDecelerationState(moveSpeed);
+                context.TransitionTo(new KittenDecelerationState(moveSpeed));
             }
 
             context.charController.Move(movement);
