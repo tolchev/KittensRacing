@@ -45,7 +45,9 @@ public class GameController : MonoBehaviour
                 p.transform.position = new Vector3(x, 15, 152);
                 p.transform.localScale = new Vector3(scale, scale, scale);
                 scale -= 2;
-            }            
+            }
+
+            Messenger.Broadcast(GameEvents.GameOver);
         }
     }
 

@@ -10,7 +10,7 @@ namespace Assets.Scripts.GameStates
             {
                 // Посылаем котам команду идти к старту.
                 Messenger.Broadcast(GameEvents.PrepareStarting);
-                context.TransitionTo(new GameWaitGoToStart());
+                context.TransitionTo(new GameWaitGoToStartState());
             }
         }
     }

@@ -3,10 +3,8 @@ using UnityEngine;
 
 namespace Assets.Scripts.KittenStates
 {
-    class KittenContext : IDisposable
+    class KittenContext
     {
-        public const string OnStart = "OnStart";
-
         public readonly CharacterController charController;
         public readonly Animator animator;
         public readonly IMovementModel movementModel;
@@ -17,8 +15,6 @@ namespace Assets.Scripts.KittenStates
             this.charController = charController;
             this.animator = animator;
             this.movementModel = movementModel;
-
-            Messenger.AddListener(GameEvents.PrepareStarting, PrepareStarting);
         }
 
         public KittenState State { get; private set; }
@@ -32,16 +28,6 @@ namespace Assets.Scripts.KittenStates
         {
             State = state;
             state.SetContext(this);
-        }
-
-        private void PrepareStarting()
-        {
-            State.OnEvent(OnStart);
-        }
-
-        public void Dispose()
-        {
-            Messenger.RemoveListener(GameEvents.PrepareStarting, PrepareStarting);
         }
     }
 }

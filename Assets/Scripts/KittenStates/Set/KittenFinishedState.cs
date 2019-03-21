@@ -21,7 +21,7 @@ namespace Assets.Scripts.KittenStates
             }
 
             context.charController.Move(movement);
-            Messenger<Transform>.Broadcast(GameEvents.KittenPosition, context.charController.transform);
+            Messenger<Transform>.Broadcast(GameEvents.KittenPositionForCamera, context.charController.transform);
         }
     }
 }

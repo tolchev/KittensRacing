@@ -5,7 +5,7 @@ public class CameraTarget : MonoBehaviour
 {
     void Start()
     {
-        Messenger<Transform>.AddListener(GameEvents.KittenPosition, OnEvent);
+        Messenger<Transform>.AddListener(GameEvents.KittenPositionForCamera, OnEvent);
     }
 
     private void OnEvent(Transform obj)
@@ -18,6 +18,6 @@ public class CameraTarget : MonoBehaviour
 
     void OnDestroy()
     {
-        Messenger<Transform>.RemoveListener(GameEvents.KittenPosition, OnEvent);
+        Messenger<Transform>.RemoveListener(GameEvents.KittenPositionForCamera, OnEvent);
     }
 }

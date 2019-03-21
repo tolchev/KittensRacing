@@ -9,17 +9,12 @@ namespace Assets.Scripts.KittenStates
     {
         bool isInit = false;
 
-        void Init(KittenContext context)
-        {
-            isInit = true;
-            context.animator.SetBool("Sitting", true);
-        }
-
         public override void Handle()
         {
             if (!isInit)
             {
-                Init(context);
+                isInit = true;
+                context.animator.SetBool("Sitting", true);
             }
 
             if (isStart && context.animator.GetCurrentAnimatorStateInfo(0).IsName("IdleSitOnly"))

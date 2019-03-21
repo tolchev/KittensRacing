@@ -2,14 +2,17 @@
 {
     abstract class KittenPrepareState : KittenState
     {
-        protected bool isStart = false;
-
-        public override void OnEvent(string evnt)
+        public KittenPrepareState()
         {
-            if (evnt == KittenContext.OnStart)
-            {
-                isStart = true;
-            }
+            Messenger.AddListener(GameEvents.PrepareStarting, PrepareStarting);
         }
+
+        private void PrepareStarting()
+        {
+            isStart = true;
+            Messenger.RemoveListener(GameEvents.PrepareStarting, PrepareStarting);
+        }
+
+        protected bool isStart = false;
     }
 }

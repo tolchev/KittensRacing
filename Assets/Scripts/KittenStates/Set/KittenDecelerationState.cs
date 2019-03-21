@@ -4,21 +4,23 @@ namespace Assets.Scripts.KittenStates
 {
     class KittenDecelerationState : KittenState
     {
-        private float speed;
+        private float curSpeed = 0;
 
-        public KittenDecelerationState(float startSpeed)
+        public KittenDecelerationState(float lastSpeed)
         {
-            speed = startSpeed;
+            curSpeed = lastSpeed;
         }
 
         public override void Handle()
         {
-            if (speed > 10)
+            if (curSpeed > 3)
             {
-                speed -= 10 * Time.deltaTime;
-                Vector3 movement = Vector3.forward * speed * Time.deltaTime;
-                context.charController.Move(movement);
-                Messenger<Transform>.Broadcast(GameEvents.KittenPosition, context.charController.transform);
+                Vector3 pos = context.charController.transform.position;
+                float z = Mathf.SmoothDamp(pos.z, 145, ref curSpeed, 1);
+                pos = new Vector3(pos.x, pos.y, z);
+
+                context.charController.transform.position = pos;
+                Messenger<Transform>.Broadcast(GameEvents.KittenPositionForCamera, context.charController.transform);
             }
             else
             {

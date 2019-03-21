@@ -4,6 +4,7 @@ namespace Assets.Scripts.KittenStates
 {
     interface IMovementModel
     {
-        float GetSpeed(TimeSpan time);
+        float GetMove();
+        float LastSpeed { get; }
     }
 }

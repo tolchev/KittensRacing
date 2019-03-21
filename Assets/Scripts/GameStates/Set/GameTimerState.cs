@@ -11,7 +11,7 @@ namespace Assets.Scripts.GameStates
             if (DateTime.Now - start >= new TimeSpan(0, 0, 3))
             {
                 Messenger.Broadcast(GameEvents.Start);
-                context.TransitionTo(new GameNullState());
+                context.TransitionTo(new GameOverWaitState());
             }
         }
     }

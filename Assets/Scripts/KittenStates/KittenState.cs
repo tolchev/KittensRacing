@@ -10,7 +10,5 @@
         }
 
         public abstract void Handle();
-
-        public virtual void OnEvent(string evnt) { }
     }
 }

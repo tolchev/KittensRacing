@@ -1,10 +1,10 @@
 ﻿namespace Assets.Scripts.GameStates
 {
-    class GameWaitGoToStart : GameState
+    class GameWaitGoToStartState : GameState
     {
         int count = 0;
 
-        public GameWaitGoToStart()
+        public GameWaitGoToStartState()
         {
             Messenger.AddListener(GameEvents.KittenOnStart, KittenOnStart);
         }
