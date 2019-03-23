@@ -1,20 +1,11 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.KittenStates
 {
     class KittenRunState : KittenState
     {
-        readonly DateTime startDateTime;
-
-        public KittenRunState()
-        {
-            startDateTime = DateTime.Now;
-        }
-
         public override void Handle()
         {
-            TimeSpan moveTime = DateTime.Now - startDateTime;
             float move = context.movementModel.GetMove();
 
             if (move >= 130)

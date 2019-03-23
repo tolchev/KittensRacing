@@ -14,8 +14,8 @@ namespace Assets.Scripts.KittenStates
 
             if (context.charController.transform.position.z + movement.z > min)
             {
-                movement.z = context.charController.transform.position.z + max;
-#warning Выровнять котов на 0.
+                // Разница, которую переступили.
+                movement.z = Mathf.Abs(context.charController.transform.position.z + max);
                 context.animator.SetBool("Walking", false);
                 context.TransitionTo(new KittenReadyState());
                 Messenger.Broadcast(GameEvents.KittenOnStart);
